@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/Users/kazuto/dotfiles/.vim/pack/indent-guides/start/vim-indent-guides/.git'
+let g:netrw_dirhist_3='/Users/kazuto/dotfiles/.vim/pack/indent-guides/start/vim-indent-guides'
+let g:netrw_dirhist_2='/Users/kazuto/public_html/node_test/scripts'
+let g:netrw_dirhist_1='/Users/kazuto/.zprezto'

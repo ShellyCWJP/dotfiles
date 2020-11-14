@@ -1,0 +1,6 @@
+[submodule ".vim/pack/indent-guides/start/vim-indent-guides"]
+	path = .vim/pack/indent-guides/start/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
+[submodule ".vim/pack/typescript/start/typescript-vim"]
+	path = .vim/pack/typescript/start/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
