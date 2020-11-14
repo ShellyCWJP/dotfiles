@@ -1,0 +1,23 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Kazuto Sueyoshi
+	email = shelly@wraithgene.com
+[core]
+	editor = vim -c \"set fenc=utf-8\"
+[url "github:"]
+  InsteadOf = https://github.com/
+  InsteadOf = git@github.com:
+[merge]
+  ff = false
+[fetch]
+  prune = true
+[pull]
+  rebase = false
+[alias]
+  ci = commit
+  civ = commit -v
+  st = status
+  co = checkout
+  br = branch
+  gr = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
+  sw = switch
