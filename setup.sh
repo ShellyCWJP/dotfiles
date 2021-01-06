@@ -145,7 +145,7 @@ mas install 497799835
 mas install 1295203466
 
 # dotfiles をインストール
-DOT_FILES=(.zshrc .tmux.conf .gitconfig .vimrc .vim)
+DOT_FILES=(.zshrc .tmux.conf .gitconfig .gitignore_global .vimrc .vim)
 
 for file in ${DOT_FILES[@]}
 do
