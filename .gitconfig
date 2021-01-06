@@ -5,9 +5,6 @@
 [core]
 	editor = vim -c \"set fenc=utf-8\"
 	excludesfile = /Users/kazuto/.gitignore_global
-[url "github:"]
-  InsteadOf = https://github.com/
-  InsteadOf = git@github.com:
 [merge]
   ff = false
 [fetch]
