@@ -4,9 +4,7 @@
 	email = shelly@wraithgene.com
 [core]
 	editor = vim -c \"set fenc=utf-8\"
-[url "github:"]
-  InsteadOf = https://github.com/
-  InsteadOf = git@github.com:
+	excludesfile = /Users/kazuto/.gitignore_global
 [merge]
   ff = false
 [fetch]
