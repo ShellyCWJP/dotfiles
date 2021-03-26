@@ -6,5 +6,6 @@
     "typescriptreact",
     "javascriptreact",
     "typescript.tsx"
-  ]
+  ],
+  "coc.preferences.formatOnType": true
 }

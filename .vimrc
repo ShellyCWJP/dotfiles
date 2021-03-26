@@ -76,7 +76,7 @@ set hlsearch
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 " シンタックス解析文字数/1行
-set synmaxcol=500
+set synmaxcol=200
 " vue シンタックス
 autocmd BufNewFile,BufRead *.{html,htm,vue*} set filetype=html
 
@@ -118,6 +118,21 @@ let g:lightline = {
   \}
 \}
 
+let g:coc_global_extensions = [
+      \  'coc-yank'
+      \, 'coc-tsserver'
+      \, 'coc-prettier'
+      \, 'coc-fzf-preview'
+      \, 'coc-explorer'
+      \, 'coc-css'
+      \, 'coc-html'
+      \, 'coc-json'
+      \, 'coc-yaml'
+      \, 'coc-word'
+      \, 'coc-phpls'
+      \, 'coc-tabnine'
+      \, ]
+
 "ノーマルモードで
 "スペース2回でCocList
 nmap <silent> <space><space> :<C-u>CocList<cr>
@@ -156,6 +171,8 @@ Plug 'prettier/vim-prettier'
 Plug 'lepture/vim-jinja'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'leafgarland/typescript-vim'
+Plug 'jwalton512/vim-blade'
+Plug 'ConradIrwin/vim-bracketed-paste'
 call plug#end()
 
 " fzf keybind

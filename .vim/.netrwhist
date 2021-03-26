@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/Users/kazuto/.tmux'
+let g:netrw_dirhist_9='/Users/kazuto/Downloads'
+let g:netrw_dirhist_8='/Users/kazuto/develop/revol/official/wordpress/cms/wp-content/themes/revol/functions'
+let g:netrw_dirhist_7='/Users/kazuto/develop/reloclub/sightseeing_2020/master/dist'
+let g:netrw_dirhist_6='/Users/kazuto/develop/takemaru/official/src/pages/business/multimedia'
+let g:netrw_dirhist_5='/Users/kazuto/develop/revol/official/wordpress/cms/wp-content/themes/revol/functions'
+let g:netrw_dirhist_4='/Users/kazuto/develop/reloclub/category-leisure/content'
+let g:netrw_dirhist_3='/Users/kazuto/develop/c-shimura/blog_scraping/scripts'
+let g:netrw_dirhist_2='/Users/kazuto/develop/assisteng/haken/wp-content/themes/ase-theme/.git'
+let g:netrw_dirhist_1='/usr/local/etc/httpd'

@@ -146,11 +146,11 @@ RPROMPT="[%*]"
 alias grep="grep --color -n -I --exclude='*.svn-*' --exclude='entries' --exclude='*/cache/*'"
 
 # ls
-alias ls="ls -G" # color for darwin
-alias l="ls -la"
-alias la="ls -la"
-alias l1="ls -1"
-alias ll="ls -l"
+alias ls="exa -G --icons" # color for darwin
+alias l="exa -la --icons"
+alias la="exa -la --icons"
+alias l1="exa -1 --icons"
+alias ll="exa -l --icons"
 
 # tree
 alias tree="tree -NC" # N: 文字化け対策, C:色をつける
@@ -163,7 +163,7 @@ alias gfrf='git flow release finish'
 alias gfhs='git flow hotfix start'
 alias gfhf='git flow hotfix finish'
 
-alias ga='git archive --format=zip --prefix=archive/ HEAD `git diff --name-only --diff-filter=AMCR HEAD~1 HEAD` -o archive.zip'
+alias garchive='git archive --format=zip --prefix=archive/ HEAD `git diff --name-only --diff-filter=AMCR HEAD~1 HEAD` -o archive.zip'
 
 # today で今日の日付を呼びだす
 alias today='date "+%Y%m%d"'
@@ -255,3 +255,31 @@ MANPATH="/usr/local/opt/findutils/libexec/gnuman:$MANPATH"
 MANPATH="/usr/local/opt/gnu-sed/libexec/gnuman:$MANPATH"
 MANPATH="/usr/local/opt/gnu-tar/libexec/gnuman:$MANPATH"
 MANPATH="/usr/local/opt/grep/libexec/gnuman:$MANPATH"
+
+source ~/antigen.zsh
+
+# Load the oh-my-zsh's library.
+# antigen use oh-my-zsh
+
+# # Bundles from the default repo (robbyrussell's oh-my-zsh).
+antigen bundle git
+antigen bundle heroku
+antigen bundle pip
+antigen bundle lein
+antigen bundle command-not-found
+
+# Syntax highlighting bundle.
+antigen bundle b4b4r07/enhancd
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-history-substring-search
+antigen bundle agnoster/agnoster-zsh-theme
+
+# Load the theme.
+# antigen theme robbyrussell
+# antigen theme agnoster
+
+# Tell Antigen that you're done.
+antigen apply
+
+export PATH="$PATH:`pwd`/flutter/bin"
+
