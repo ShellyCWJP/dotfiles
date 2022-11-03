@@ -41,7 +41,7 @@ opt.wrapscan = true
 
 -- Plugin Loading
 vim.cmd('packadd vim-jetpack')
-require('jetpack').startup(function(use)
+require('jetpack.packer').startup(function(use)
   use { 'tani/vim-jetpack', opt = 1 } -- bootstrap
   use 'ConradIrwin/vim-bracketed-paste'
   use 'Shougo/deoplete.nvim'
