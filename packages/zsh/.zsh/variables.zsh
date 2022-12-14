@@ -16,8 +16,8 @@ export LC_ALL=en_US.UTF-8
 export EDITOR=/usr/local/bin/nvim
 
 # ページャ
-export PAGER=/usr/local/bin/vimpager
-export MANPAGER=/usr/local/bin/vimpager
+export PAGER=/usr/local/bin/nvimpager
+export MANAGER=/usr/local/bin/nvimpager
 
 # nodenv
 export PATH="$HOME/.ndenv/bin:$PATH"

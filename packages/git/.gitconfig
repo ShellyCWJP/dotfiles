@@ -3,7 +3,7 @@
 	name = Kazuto Sueyoshi
 	email = shelly@wraithgene.com
 [core]
-	editor = vim -c \"set fenc=utf-8\"
+	editor = nvim
 	excludesfile = /Users/kazuto/.gitignore_global
 [merge]
   ff = false
