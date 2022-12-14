@@ -45,7 +45,6 @@ require('jetpack.packer').startup(function(use)
   use { 'tani/vim-jetpack', opt = 1 } -- bootstrap
   use 'ConradIrwin/vim-bracketed-paste'
   use 'Shougo/deoplete.nvim'
-  use 'airblade/vim-gitgutter'
   use 'digitaltoad/vim-pug'
   use 'editorconfig/editorconfig-vim'
   use 'github/copilot.vim'
@@ -80,4 +79,8 @@ require('jetpack.packer').startup(function(use)
   use { 'glepnir/lspsaga.nvim', branch = 'main' }
   use { 'iamcco/markdown-preview.nvim', run = 'cd app && yarn install' }
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+  use 'lambdalisue/fern.vim'
+  use 'lewis6991/gitsigns.nvim'
+  use 'machakann/vim-sandwich'
+  use 'monaqa/dial.nvim'
 end)
