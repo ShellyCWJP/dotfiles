@@ -20,3 +20,12 @@ eval "$(starship init zsh)"
 if (which zprof > /dev/null 2>&1) ;then
   zprof
 fi
+
+# zsh-completions
+if type brew &>/dev/null; then
+FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+autoload -Uz compinit
+compinit
+fi
+
