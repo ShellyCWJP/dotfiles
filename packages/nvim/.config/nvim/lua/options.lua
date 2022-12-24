@@ -14,7 +14,7 @@ opt.mouse = 'r'
 -- Visual Settings
 opt.background = 'dark'
 opt.cursorline = true
-opt.laststatus = 2
+opt.laststatus = 3
 opt.number = true
 opt.showmatch = true
 opt.smartindent = true
@@ -45,7 +45,6 @@ require('jetpack.packer').startup(function(use)
   use { 'tani/vim-jetpack', opt = 1 } -- bootstrap
   use 'ConradIrwin/vim-bracketed-paste'
   use 'Shougo/deoplete.nvim'
-  use 'airblade/vim-gitgutter'
   use 'digitaltoad/vim-pug'
   use 'editorconfig/editorconfig-vim'
   use 'github/copilot.vim'
@@ -79,5 +78,12 @@ require('jetpack.packer').startup(function(use)
   use 'williamboman/mason.nvim'
   use { 'glepnir/lspsaga.nvim', branch = 'main' }
   use { 'iamcco/markdown-preview.nvim', run = 'cd app && yarn install' }
-  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+  use 'nvim-treesitter/nvim-treesitter'
+  use 'lambdalisue/fern.vim'
+  use 'lewis6991/gitsigns.nvim'
+  use 'machakann/vim-sandwich'
+  use 'monaqa/dial.nvim'
+  use 'lmburns/kimbox'
+  use { "lmburns/kimbox" }
+  use { 'nvim-lualine/lualine.nvim' }
 end)

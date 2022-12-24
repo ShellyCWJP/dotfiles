@@ -29,7 +29,7 @@ colors:
 
   # Bright colors
   bright:
-    black:   '0x373b41'
+    black:   '0x585e68'
     blue:    '0x81a2be'
     cyan:    '0x8abeb7'
     green:   '0xb5bd68'
