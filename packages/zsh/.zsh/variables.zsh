@@ -19,10 +19,6 @@ export EDITOR=/usr/local/bin/nvim
 export PAGER=/usr/local/bin/nvimpager
 export MANAGER=/usr/local/bin/nvimpager
 
-# nodenv
-export PATH="$HOME/.ndenv/bin:$PATH"
-eval "$(nodenv init -)"
-
 # node modules
 export PATH="$PATH:./node_modules/.bin"
 
