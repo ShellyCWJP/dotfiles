@@ -5,7 +5,7 @@ colors:
     foreground: '0xf9e7c4'
 
     dim_foreground:    '0x685E4A'
-    bright_foreground: '0x1C1508'
+    bright_foreground: '0xc5c8c6'
     dim_background:    '0x202322'
     bright_background: '0x353433'
 
