@@ -1,4 +1,4 @@
-require("lspsaga").init_lsp_saga({
+require("lspsaga").setup({
   border_style = "single",
   symbol_in_winbar = {
     enable = true,

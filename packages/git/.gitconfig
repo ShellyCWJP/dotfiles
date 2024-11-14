@@ -10,7 +10,7 @@
 [fetch]
   prune = true
 [pull]
-  rebase = false
+  rebase = true
 [alias]
   ci = commit
   civ = commit -v
@@ -24,3 +24,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[init]
+	defaultBranch = main

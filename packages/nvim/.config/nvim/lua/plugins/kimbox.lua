@@ -1,5 +1,5 @@
 require("kimbox").setup({
-  style = "darker",
+  style = "zinnwaldite",
   transparent = true,
 })
 

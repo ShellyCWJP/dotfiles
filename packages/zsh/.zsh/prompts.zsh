@@ -43,4 +43,4 @@ PROMPT+="%% "
 RPROMPT="[%*]"
 
 # cdしたあとで、自動的に ls する
-function chpwd() { exa -l --icons }
+function chpwd() { eza -l --icons }

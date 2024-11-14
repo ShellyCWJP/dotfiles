@@ -23,6 +23,9 @@ opt.syntax = 'on'
 opt.virtualedit = 'onemore'
 opt.visualbell = true
 opt.wildmode = 'list:longest'
+opt.termguicolors = true
+opt.winblend = 0
+opt.pumblend = 0
 
 -- Edit Settings
 opt.expandtab = true
@@ -58,16 +61,14 @@ require('jetpack.packer').startup(function(use)
   use 'junegunn/fzf.vim'
   use 'kana/vim-operator-replace'
   use 'kana/vim-operator-user'
-  use 'kyazdani42/nvim-web-devicons'
+  use 'nvim-tree/nvim-web-devicons'
   use 'lambdalisue/vim-pager'
-  use 'leafgarland/typescript-vim'
   use 'lepture/vim-jinja'
   use 'mopp/autodirmake.vim'
-  use 'nathanaelkane/vim-indent-guides'
+  use "shellRaining/hlchunk.nvim"
   use 'neovim/nvim-lspconfig'
   use 'ntpeters/vim-better-whitespace'
   use 'prettier/vim-prettier'
-  use 'sainnhe/gruvbox-material'
   use 'sheerun/vim-polyglot'
   use 'tpope/vim-commentary'
   use 'tpope/vim-fugitive'
@@ -83,7 +84,21 @@ require('jetpack.packer').startup(function(use)
   use 'lewis6991/gitsigns.nvim'
   use 'machakann/vim-sandwich'
   use 'monaqa/dial.nvim'
-  use 'lmburns/kimbox'
-  use { "lmburns/kimbox" }
   use { 'nvim-lualine/lualine.nvim' }
+  use 'neanias/everforest-nvim'
+  use 'romgrk/barbar.nvim'
+  use 'kazhala/close-buffers.nvim'
+  use {
+    "folke/which-key.nvim",
+    config = function()
+      vim.o.timeout = true
+      vim.o.timeoutlen = 300
+      require("which-key").setup {}
+    end
+  }
+  use 'folke/noice.nvim'
+  use 'MunifTanjim/nui.nvim'
+  use 'j-hui/fidget.nvim'
+  use 'stevearc/aerial.nvim'
+  use { 'catppuccin/nvim', as = "catppuccin" }
 end)

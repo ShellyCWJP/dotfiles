@@ -3,12 +3,12 @@
 # -------------------------
 
 # ls
-alias ls="exa -G --icons"
-alias ll="exa -la --icons"
-alias la="exa -la --icons"
-alias l1="exa -1 --icons"
-alias lt="exa -laT --icons"
-alias l="exa -l --icons"
+alias ls="eza -G --icons auto"
+alias ll="eza -la --icons auto"
+alias la="eza -la --icons auto"
+alias l1="eza -1 --icons auto"
+alias lt="eza -laT --icons auto"
+alias l="eza -l --icons auto"
 
 # tree
 alias tree="tree -NC" # N: 文字化け対策, C:色をつける
