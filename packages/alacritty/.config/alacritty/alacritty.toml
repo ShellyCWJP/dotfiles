@@ -14,19 +14,19 @@ builtin_box_drawing = true
 size = 16.0
 
 [font.bold]
-family = "FuraCode Nerd Font"
+family = "FiraCode Nerd Font"
 style = "Bold"
 
 [font.bold_italic]
-family = "FuraCode Nerd Font"
+family = "FiraCode Nerd Font"
 style = "Bold Italic"
 
 [font.italic]
-family = "FuraCode Nerd Font"
+family = "FiraCode Nerd Font"
 style = "Italic"
 
 [font.normal]
-family = "FuraCode Nerd Font"
+family = "FiraCode Nerd Font"
 style = "Retina"
 
 [font.offset]
@@ -37,9 +37,9 @@ y = 0
 history = 10000
 multiplier = 3
 
-# [shell]
-# args = ["-l", "-c", "tmux a -t 0 || tmux"]
-# program = "/bin/zsh"
+[terminal.shell]
+args = ["-l", "-c", "tmux a -t 0 || tmux"]
+program = "/bin/zsh"
 
 [window]
 decorations = "Full"

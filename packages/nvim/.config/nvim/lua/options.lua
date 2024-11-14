@@ -86,7 +86,6 @@ require('jetpack.packer').startup(function(use)
   use 'monaqa/dial.nvim'
   use { 'nvim-lualine/lualine.nvim' }
   use 'neanias/everforest-nvim'
-  use 'romgrk/barbar.nvim'
   use 'kazhala/close-buffers.nvim'
   use {
     "folke/which-key.nvim",
