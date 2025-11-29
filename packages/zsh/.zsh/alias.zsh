@@ -4,8 +4,8 @@
 
 # ls
 alias ls="eza -G --icons auto"
-alias ll="eza -la --icons auto"
-alias la="eza -la --icons auto"
+alias ll="eza -lag --icons auto"
+alias la="eza -lag --icons auto"
 alias l1="eza -1 --icons auto"
 alias lt="eza -laT --icons auto"
 alias l="eza -l --icons auto"
@@ -33,6 +33,7 @@ alias cp='cp -i'
 # disable correct
 alias yarn='nocorrect yarn'
 alias gulp="nocorrect gulp"
+alias turbo="nocorrect turbo"
 
 # alias
 alias sed='gsed'
