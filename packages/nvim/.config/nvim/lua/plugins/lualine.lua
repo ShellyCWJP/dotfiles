@@ -1,5 +1,6 @@
--- Colors can be accessed with
-require("lualine").setup({
-  -- configuration stuff
-  theme = 'auto' -- 'auto' works as well
-})
+return {
+  "nvim-lualine/lualine.nvim",
+  dependencies = { "nvim-tree/nvim-web-devicons" },
+  event = "VeryLazy",
+  opts = {},
+}
