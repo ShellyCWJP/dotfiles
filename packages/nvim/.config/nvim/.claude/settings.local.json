@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "WebFetch(domain:lazy.folke.io)",
-      "Bash(mkdir:*)"
-    ],
-    "deny": []
-  }
-}
