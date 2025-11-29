@@ -27,7 +27,12 @@ return {
     indent = { enabled = true },
     input = { enabled = true },
     notify = { enabled = true },
-    picker = { enabled = true },
+    picker = {
+      enabled = true,
+      sources = {
+        files = { hidden = true },
+      },
+    },
     rename = { enabled = true },
     scope = { enabled = true },
     scroll = { enabled = true },
