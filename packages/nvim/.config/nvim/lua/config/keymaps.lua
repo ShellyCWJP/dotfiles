@@ -27,3 +27,6 @@ keymap("n", "n", "nzzzv")
 keymap("n", "N", "Nzzzv")
 
 keymap({ "n", "v" }, "<leader>y", '"+y')
+
+keymap("n", "<leader>e", vim.diagnostic.open_float)
+keymap("n", "<leader>q", vim.diagnostic.setloclist)
