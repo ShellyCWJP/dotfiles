@@ -8,7 +8,7 @@ opt.shiftwidth = 2
 opt.expandtab = true
 opt.autoindent = true
 
-opt.wrap = false
+opt.wrap = true
 
 opt.ignorecase = true
 opt.smartcase = true
@@ -36,3 +36,5 @@ opt.scrolloff = 8
 opt.sidescrolloff = 8
 
 opt.laststatus = 3
+
+opt.autoread = true
