@@ -37,6 +37,8 @@ opt.sidescrolloff = 8
 
 opt.laststatus = 3
 
+opt.mouse = ""
+
 opt.autoread = true
 
 vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter", "CursorHold" }, {
