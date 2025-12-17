@@ -9,11 +9,6 @@ keymap("n", "<C-j>", "<C-w>j")
 keymap("n", "<C-k>", "<C-w>k")
 keymap("n", "<C-l>", "<C-w>l")
 
-keymap("n", "<C-w>H", "<C-w><")
-keymap("n", "<C-w>J", "<C-w>-")
-keymap("n", "<C-w>K", "<C-w>+")
-keymap("n", "<C-w>L", "<C-w>>")
-keymap("n", "<C-w>=", "<C-w>=")
 
 keymap("v", "J", ":m '>+1<CR>gv=gv")
 keymap("v", "K", ":m '<-2<CR>gv=gv")
