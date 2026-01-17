@@ -5,8 +5,7 @@
 export LC_CTYPE=C
 export LANG=C
 
-# vim 風キーバインド
-bindkey -v
+# vim 風キーバインドは keybind.zsh で設定
 
 # SSHで接続した先で日本語が使えるようにする
 export LC_CTYPE=en_US.UTF-8

@@ -2,6 +2,9 @@
 # キーバインド
 # -------------------------
 
+# vim 風キーバインド
+bindkey -v
+
 # Search history increment
 function cdup() {
   echo

@@ -2,6 +2,13 @@
 # zsh Options
 # -------------------------
 
+# -------------------------
+# 履歴設定
+# -------------------------
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+
 # 補完機能の強化
 autoload -U compinit
 compinit
