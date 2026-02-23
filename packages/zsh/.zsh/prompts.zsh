@@ -42,5 +42,7 @@ PROMPT+="%% "
 
 RPROMPT="[%*]"
 
-# cdしたあとで、自動的に ls する
-function chpwd() { eza -l --icons }
+# cdしたあとで、自動的に ls する（TTY接続時のみ）
+if [[ -t 1 ]]; then
+  function chpwd() { eza -l --icons }
+fi

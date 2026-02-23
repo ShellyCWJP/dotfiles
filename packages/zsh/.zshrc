@@ -11,28 +11,34 @@ if [ -d $ZSHHOME -a -r $ZSHHOME -a \
     done
 fi
 
-# zsh-autosuggestions
-source ${HOME}/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+# TTY が接続されている場合のみ、インタラクティブ専用ツールを読み込む
+if [[ -t 1 ]]; then
+  # zsh-autosuggestions
+  source ${HOME}/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# starship
-eval "$(starship init zsh)"
+  # starship
+  eval "$(starship init zsh)"
 
-if (which zprof > /dev/null 2>&1) ;then
-  zprof
-fi
+  if (which zprof > /dev/null 2>&1) ;then
+    zprof
+  fi
 
-# zsh-completions
-if type brew &>/dev/null; then
-FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+  # zsh-completions
+  if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
 
-autoload -Uz compinit
-compinit
+  autoload -Uz compinit
+  compinit
+  fi
+
+  [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+  # direnv
+  eval "$(direnv hook zsh)"
 fi
 
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # pnpm
 export PNPM_HOME="/Users/kazuto/Library/pnpm"
@@ -47,4 +53,6 @@ if [ -f '/Users/kazuto/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kazuto/g
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/kazuto/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kazuto/google-cloud-sdk/completion.zsh.inc'; fi
+
+export BROWSER='function _open(){ echo "\n=== OPEN THIS URL ===\n$1\n=====================\n"; }; _open'
 

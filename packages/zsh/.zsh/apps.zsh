@@ -14,6 +14,8 @@ fvim() {
   vim $selected_files
 }
 
-# tmux Backspace
-[[ -n "$TMUX" ]] && stty erase '^?'
-[[ "$TERM" =~ ^screen ]] && stty erase '^?'
+# tmux Backspace（TTY接続時のみ）
+if [[ -t 0 ]]; then
+  [[ -n "$TMUX" ]] && stty erase '^?'
+  [[ "$TERM" =~ ^screen ]] && stty erase '^?'
+fi
