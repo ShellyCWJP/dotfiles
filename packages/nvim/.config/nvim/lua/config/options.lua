@@ -39,6 +39,8 @@ opt.laststatus = 3
 
 opt.mouse = ""
 
+opt.guicursor = "n-v-c-sm:hor20,i-ci-ve:ver25,r-cr-o:hor20"
+
 opt.autoread = true
 
 vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter", "CursorHold" }, {
