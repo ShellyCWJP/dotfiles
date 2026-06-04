@@ -1,7 +1,7 @@
 # This is Git's per-user configuration file.
 [user]
 	name = Kazuto Sueyoshi
-	email = shelly@wraithgene.com
+	email = hi@kazuto-sueyoshi.com
 [core]
 	editor = nvim
 	excludesfile = /Users/kazuto/.gitignore_global

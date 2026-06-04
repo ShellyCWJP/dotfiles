@@ -5,6 +5,8 @@
 # 重複する要素を自動的に削除
 typeset -U path cdpath fpath manpath
 
+export PATH="$HOME/.local/bin:$PATH"
+
 path=(
   $HOME/bin(N-/)
   /usr/local/bin(N-/)
