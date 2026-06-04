@@ -1,3 +1,4 @@
+local.zsh
 local.lua
 lazy-lock.json
 packages/tmux/.tmux.conf.local
