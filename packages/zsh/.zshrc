@@ -33,8 +33,10 @@ if [[ -t 1 ]]; then
 
   [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-  # direnv
-  eval "$(direnv hook zsh)"
+  # direnv（インストールされている場合のみ）
+  if (( $+commands[direnv] )); then
+    eval "$(direnv hook zsh)"
+  fi
 fi
 
 export VOLTA_HOME="$HOME/.volta"
